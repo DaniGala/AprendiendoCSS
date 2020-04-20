@@ -6,28 +6,50 @@
             <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
     <body>
-            <h1>Master en CSS con Víctor Robles WEB</h1>
-            <ul>
+            <h1 id="titulo">Master en CSS con Víctor Robles WEB</h1>
+            <ul id="menu">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Temario</a></li>
+                <li>
+                    <a href="#">Temario</a>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">LESS</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Reseñas</a></li>
                 <li><a href="#">Contacta</a></li>
             </ul>
 
             <div id="descripcion">
                 <h2>Decripción del curso</h2>
-                <p>
+                <p class="parrafo parrafo1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget faucibus augue. Nunc lobortis massa mauris, et imperdiet eros elementum ut. Phasellus ullamcorper consectetur arcu at facilisis. Nullam purus justo, commodo quis risus a, convallis mattis sapien. Vivamus sollicitudin, nulla in suscipit iaculis, metus risus ultrices augue, et ornare augue arcu imperdiet ex. Morbi lacinia diam in mi viverra, nec sagittis ex porttitor. Ut id ultricies justo, sed luctus nulla. Proin venenatis metus ut euismod volutpat. In pulvinar eros non ipsum consectetur tincidunt. Suspendisse volutpat vitae nisi eget malesuada. Quisque eget turpis vitae ligula luctus commodo. In iaculis risus urna, sed euismod erat porta ac. Ut laoreet scelerisque ornare. Mauris commodo consequat urna, vel pellentesque tortor malesuada in. Vivamus odio ante, commodo ac purus in, feugiat volutpat ipsum.
                 </p>
-                <p>
+                <p class="parrafo">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget faucibus augue. Nunc lobortis massa mauris, et imperdiet eros elementum ut. Phasellus ullamcorper consectetur arcu at facilisis. Nullam purus justo, commodo quis risus a, convallis mattis sapien. Vivamus sollicitudin, nulla in suscipit iaculis, metus risus ultrices augue, et ornare augue arcu imperdiet ex. Morbi lacinia diam in mi viverra, nec sagittis ex porttitor. Ut id ultricies justo, sed luctus nulla. Proin venenatis metus ut euismod volutpat. In pulvinar eros non ipsum consectetur tincidunt. Suspendisse volutpat vitae nisi eget malesuada. Quisque eget turpis vitae ligula luctus commodo. In iaculis risus urna, sed euismod erat porta ac. Ut laoreet scelerisque ornare. Mauris commodo consequat urna, vel pellentesque tortor malesuada in. Vivamus odio ante, commodo ac purus in, feugiat volutpat ipsum.
                 </p>
-                <p>
+                <p class="parrafo">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget faucibus augue. Nunc lobortis massa mauris, et imperdiet eros elementum ut. Phasellus ullamcorper consectetur arcu at facilisis. Nullam purus justo, commodo quis risus a, convallis mattis sapien. Vivamus sollicitudin, nulla in suscipit iaculis, metus risus ultrices augue, et ornare augue arcu imperdiet ex. Morbi lacinia diam in mi viverra, nec sagittis ex porttitor. Ut id ultricies justo, sed luctus nulla. Proin venenatis metus ut euismod volutpat. In pulvinar eros non ipsum consectetur tincidunt. Suspendisse volutpat vitae nisi eget malesuada. Quisque eget turpis vitae ligula luctus commodo. In iaculis risus urna, sed euismod erat porta ac. Ut laoreet scelerisque ornare. Mauris commodo consequat urna, vel pellentesque tortor malesuada in. Vivamus odio ante, commodo ac purus in, feugiat volutpat ipsum.
                 </p>
-                <p>
+                <p class="parrafo">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget faucibus augue. Nunc lobortis massa mauris, et imperdiet eros elementum ut. Phasellus ullamcorper consectetur arcu at facilisis. Nullam purus justo, commodo quis risus a, convallis mattis sapien. Vivamus sollicitudin, nulla in suscipit iaculis, metus risus ultrices augue, et ornare augue arcu imperdiet ex. Morbi lacinia diam in mi viverra, nec sagittis ex porttitor. Ut id ultricies justo, sed luctus nulla. Proin venenatis metus ut euismod volutpat. In pulvinar eros non ipsum consectetur tincidunt. Suspendisse volutpat vitae nisi eget malesuada. Quisque eget turpis vitae ligula luctus commodo. In iaculis risus urna, sed euismod erat porta ac. Ut laoreet scelerisque ornare. Mauris commodo consequat urna, vel pellentesque tortor malesuada in. Vivamus odio ante, commodo ac purus in, feugiat volutpat ipsum.
                 </p>
+            </div>
+
+            <div id="user">
+                <form>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre"/>
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos"/>
+
+                    <input type="submit" name="submit"/>
+                </form>
+            </div>
+
+            <div id="saludo">
+                <h1>Hola Soy Daniel Gala, ¡VIVA ESPAÑA!</h1>
             </div>
 
             <footer>
