@@ -3,22 +3,28 @@
     padding: 0px;
 }
 
-#caja1, #caja2{
+#cajas .caja{
+    display: block;
     background-color: brown;
-    color:white;
     width: 250px;
     height: 250px;
     border:10px solid black;
     margin: 15px;
     padding:20px;
+
 }
 
 
-p{
+.caja p{
     font-family: Arial;
     font-weight: bold;
     text-align: center;
     color:wheat;
     font-size: 20px;
     line-height: 230px;
+}
+
+.cleardiv{
+    float: none;
+    clear: both;
 }
