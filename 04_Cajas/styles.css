@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+#cajas {
+    max-width: 1080px;
+    border: 2px solid black;
+}
+
 #cajas .caja{
     display: block;
     background-color: brown;
@@ -11,7 +16,7 @@
     border:10px solid black;
     margin: 15px;
     padding:20px;
-
+    float: left;
 }
 
 
