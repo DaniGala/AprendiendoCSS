@@ -1,7 +1,8 @@
 
-*{
+*{/*Reseteos y defaults*/
     padding: 0px;
     margin: 0px;
+    text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -11,57 +12,60 @@
 
 #container{
     width: 1200px;
-    /* height: 1200px; */
-    position: relative;
     background-color: bisque;
-    margin-right: auto ;
-    margin-left: auto;
+    margin: 0px auto; /*poara centrar el contenerdor*/
 }
 
-#cabecera {
+#header {
     width: 100%;
     height: 200px;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
+    
     background-image: url(img/pattern.jpg);
+}
+
+#header h1{
+    color: aliceblue;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #menu-nav{
     display: flex;
-
     width: 100%;
     background-color: black; 
-    color: white;
-    height: 50px;
-    
-    align-items: center;
+    padding: 0;
 }
 
-#menu-nav ul{
+/* #menu-nav ul{
     margin: 0px;
     padding: 0;
     list-style: none;
-}
+} */
 
-#menu-nav .menu-item{
-    display: inline-block;
+#menu-nav ul li{
+    display: block;
+    float: left;
+    margin: 0;
+    transition: all 0.3s linear;
 }
-
+#menu-nav ul li:hover{
+    background-color: rgb(44, 44, 44);
+    cursor: pointer;
+}
 #menu-nav .menu-item a{
     display: block;
+    padding: 15px;
     color: white;
-    text-decoration: none;
+    
     font-weight: 100;
     text-transform: uppercase;
-    padding: 15px ;
-    transition: all 0.2s linear;
 }
 
-#menu-nav .menu-item a:hover{
-    background-color: rgb(44, 44, 44);
-}
+/* #menu-nav .menu-item a:hover{
+    
+} */
 
 .fixfloats{
     float: none;
@@ -100,7 +104,6 @@
     height: auto;
     float: left;
     background-color: yellow;
-    /* padding-right: 30%; */
 }
 
 #bodycontainer #titulo-contenido{
@@ -125,6 +128,7 @@ footer{
     padding: 20px auto;
     height: 100px;
     align-items: center;
+    border-top: 1px solid darkgreen;
 }
 
 footer p{
