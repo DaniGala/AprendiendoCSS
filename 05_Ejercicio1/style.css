@@ -87,7 +87,10 @@
     width: 30%;
     height: auto;
     min-height: 500px;
+    max-height: 1300px;
     float: left;
+    overflow-y: auto;
+    scrollbar-arrow-color: blueviolet;
 }
 
 #sidebar .side-element{
@@ -95,6 +98,16 @@
     margin: 10px;
     padding: 10px;
     height: 150px;
+    box-shadow: 2px 2px 2px black inset;
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#sidebar p{
+    color: aliceblue;
+    padding: 10px;
 }
 
 #bodycontainer{
@@ -120,6 +133,23 @@
     margin: 10px;
     float: left;
     text-align: center;
+    box-shadow: 1px 1px 3px black;
+    transition: all 0.5s ease-in-out;
+}
+
+#bodycontainer .caja:hover{
+    border-radius: 200px;
+    background-color: rgb(202, 110, 110);
+}
+
+#bodycontainer .caja p{
+    line-height: 300px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: wheat;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+   
 }
 
 footer{
@@ -136,4 +166,8 @@ footer p{
     margin: auto;
     background-color: aqua;
     text-align: center;
+}
+
+#titulo{
+    text-shadow: 1px 2px 3px black;
 }

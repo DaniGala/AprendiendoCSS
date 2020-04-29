@@ -1,0 +1,13 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li:first-child{/*Selecciona el primer hijo*/
+    color: blue;
+}
+
+ul li:nth-child(2){ /*Selecciona el indice del elemento*/
+    color: pink;
+}

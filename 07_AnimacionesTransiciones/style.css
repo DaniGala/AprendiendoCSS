@@ -1,0 +1,62 @@
+*{
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+}
+
+#boton {
+
+    display: block;
+    /* padding: 20px; */
+    /* background-color: green; */
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    transition: font-size 0.7s, background 0.5s, color 0.5s;
+    line-height: 50px;
+    background-color: white;
+    border: 2px solid green;
+    
+}
+
+#boton .fa-linkedin-square{
+    font-size: 20px;
+}
+
+#boton:hover{
+    background: green;
+    /* width: 210px; */
+    font-size: 20px;
+    color: white;
+}
+
+#caja{
+    position: absolute;
+margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+    line-height: 250px;
+    left: -250px;
+    /* animation-iteration-count: infinite; */
+}
+
+#caja .show{
+    animation-name: desplazar;
+    animation-duration: 1s;
+}
+
+@keyframes desplazar{
+    from{
+        left: -250px;
+    }
+    to{
+        left: 0px;
+    }
+}
