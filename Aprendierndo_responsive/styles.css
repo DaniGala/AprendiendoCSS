@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#container{
+    margin:0px auto;
+    background-color: blueviolet;
+    width: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header{
+    width: 100%;
+    background-color: aqua;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    color: #ccc;
+}
+
+aside{
+    float: left;
+    width: 25%;
+    min-height: 700px;
+    background: red;
+    text-align: center;
+    line-height: 700px; /*Centra lo que es la linea de texto en medio de la caja*/
+}
+
+#articles{
+    width: 75%;
+    min-height:700px ;
+    float: left;
+    background-color: coral;
+}
+
+#articles article{
+    background-color: green;
+    color: white;
+    width: 25%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+     float: left;
+     margin: 15px;
+}
+
+
+/*RESPONSIVE*/
+
+/*  Desde la anchura 0px hasta la anchura 888px, se aplican estos estilos*/
+@media(max-width:888px){
+
+    #articles article{
+        width: 40%;
+        background-color: purple;
+    }
+
+}
+@media(max-width:600px){
+
+    #container{
+        overflow: hidden;
+    }
+
+    aside{
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 92%;
+        padding: 18px;
+        text-align: center;
+    }
+
+    #articles {
+        width: 100%;
+    }
+
+    #articles article{
+        width: 90%;
+        background-color: blue;
+    }
+
+}
